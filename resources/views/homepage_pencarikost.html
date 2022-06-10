@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Home Page Pencari Kos | NgekostAja</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+      <!-- Navigation Bar -->
+        <nav class="navbar navbar-light shadow p-3 mb-5 bg-body fixed-top" style="background-color:#ffffff">
+          <div class="container-fluid">
+            <a class="navbar-brand text-brand mx-3" href="#">Ngekost<span class="color-b">Aja</span></a>
+            <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="bi bi-person-circle" style="color: #ffcc00"></i> Yusrah</h4>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile Saya</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="list_kos.html">List Kost</a>
+                  </li>
+                </ul><hr>
+                <form class="form-a">
+                  <div class="row">
+                    <div class="col-md-6 mb-2">
+                      <div class="form-group mt-3">
+                        <label class="pb-2" for="Type">Tipe Kos</label>
+                        <select class="form-control form-select form-control-a" id="Type">
+                          <option>Semua Tipe</option>
+                          <option>Kos Putra</option>
+                          <option>Kos Putri</option>
+                          <option>Kos Campuran</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                      <div class="form-group mt-3">
+                        <label class="pb-2" for="price">Rentang Harga</label>
+                        <select class="form-control form-select form-control-a" id="price">
+                          <option>Semua</option>
+                          <option>Rp. 3.000.000 - Rp.3.999.999 / tahun</option>
+                          <option>Rp. 4.000.000 - Rp.4.999.999 / tahun</option>
+                          <option>Rp. 5.000.000 - Rp.5.999.999 / tahun</option>
+                          <option>Rp. 6.000.000 - Rp.6.999.999 / tahun</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form class="d-flex">
+                  <button class="btn btn-warning" type="submit">Cari</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      <!-- End of Navbar -->
+
+    <!-- ======= Jumbotron ======= -->
+    <div class="intro intro-carousel swiper position-relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-1.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="intro-body">
+                      <p class="intro-title-top">
+                        Makassar, Sulawesi Selatan<br />
+                        Biringkanaya
+                      </p>
+                      <h1 class="intro-title mb-4">
+                        <span class="color-b">Kos </span> Bintang <br />
+                        Dilangit Terang
+                      </h1>
+                      <p class="intro-subtitle intro-price">
+                        <a href="#"><span class="price-a">Sewa | Rp. 450.000/bulan</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-2.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="intro-body">
+                      <p class="intro-title-top">
+                        Gowa, Sulawesi Selatan<br />
+                        Bontomarannu
+                      </p>
+                      <h1 class="intro-title mb-4">
+                        <span class="color-b">Kos </span> Nugraha <br />
+                      </h1>
+                      <p class="intro-subtitle intro-price">
+                        <a href="#"><span class="price-a">Sewa | Rp. 500.000/bulan</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-3.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="intro-body">
+                      <p class="intro-title-top">
+                        Makassar, Sulawesi Selatan<br />
+                        Tamalanrea
+                      </p>
+                      <h1 class="intro-title mb-4">
+                        <span class="color-b">Kos </span> Bulan <br />
+                      </h1>
+                      <p class="intro-subtitle intro-price">
+                        <a href="#"><span class="price-a">Sewa | Rp. 750.000/bulan</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- End Jumbotron -->
+
+    <main id="main">
+      <!-- ======= Fitur Kami ======= -->
+      <section id="fitur" class="section-services section-t8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-wrap d-flex justify-content-between">
+                <div class="title-box">
+                  <h2 class="title-a">Fitur Kami</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card-box-c foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <img src="assets/img/fitur1.png" alt="360 Degree">
+                  </div>
+                  <div class="card-title-c align-self-center">
+                    <h2 class="title-c">Virtual Room</h2>
+                  </div>
+                </div>
+                <div class="card-body-c">
+                  <p class="content-c">Dengan fitur ini, anda dapat melihat seluruh ruangan indekos anda tanpa harus keluar rumah. 
+                    Anda dapat melihat seluruh ruangan dimana saja dan kapan saja.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-box-c foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <img src="assets/img/fitur2.png" alt="Easy Payment">
+                  </div>
+                  <div class="card-title-c align-self-center">
+                    <h2 class="title-c">Pembayaran Mudah</h2>
+                  </div>
+                </div>
+                <div class="card-body-c">
+                  <p class="content-c">Kami juga menawarkan fitur pembayaran digital melalui metode transfer 
+                    sehingga anda tak perlu lagi keluar rumah untuk melakukan proses pembayaran.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-box-c foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <img src="assets/img/fitur3.png" alt="Cheap">
+                  </div>
+                  <div class="card-title-c align-self-center">
+                    <h2 class="title-c">Harga Terjangkau</h2>
+                  </div>
+                </div>
+                <div class="card-body-c">
+                  <p class="content-c">Kamu juga berksesmpatan untuk mendapatkan indekos impian kamu dengan harga yang terjangkau.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Kos Putra ======= -->
+      <section id="kos_putra" class="section-property section-t8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-wrap d-flex justify-content-between">
+                <div class="title-box">
+                  <h2 class="title-a">Kos Putra</h2>
+                </div>
+                <div class="title-link">
+                  <a href="list_kos.html"
+                    >Lihat Semua
+                    <span class="bi bi-chevron-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="property-grid grid">
+            <div class="container">
+              <div class="row">
+                <!-- Kos Namira -->
+                <div class="col-md-4">
+                  <div class="card-box-a card-shadow">
+                    <div class="img-box-a">
+                      <img src="assets/img/Foto Konfirmasi/kos_namira1.jpg" alt="" class="img-a img-fluid" />
+                    </div>
+                    <div class="card-overlay">
+                      <div class="card-overlay-a-content">
+                        <div class="card-header-a">
+                          <h2 class="card-title-a">
+                            <a href="detail_page.html"
+                              >Kos Namira <br />
+                              Gowa</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="card-body-a">
+                          <div class="price-box d-flex">
+                            <span class="price-a">Sewa | Rp. 3.500.000/Tahun</span>
+                          </div>
+                          <a href="Detail_page.html" class="link-a"
+                            >Lihat Kos
+                            <span class="bi bi-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="card-footer-a">
+                          <ul class="card-info d-flex justify-content-around">
+                            <li>
+                              <h4 class="card-info-title">Luas</h4>
+                              <span
+                                >3x4 m
+                                <sup>2</sup>
+                              </span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">Wi-fi</h4>
+                              <span>Ada</span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">AC</h4>
+                              <span>Ada</span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">Tipe Kos</h4>
+                              <span>Putra</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Kos Namira -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- End of Kos Putra -->
+
+      <!-- ======= Kos Putri ======= -->
+      <section id="kos_putri" class="section-property section-t8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-wrap d-flex justify-content-between">
+                <div class="title-box">
+                  <h2 class="title-a">Kos Putri</h2>
+                </div>
+                <div class="title-link">
+                  <a href="list_kos.html"
+                    >Lihat Semua
+                    <span class="bi bi-chevron-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="property-grid grid">
+            <div class="container">
+              <div class="row">
+                <!-- Pondok Berlian 2 -->
+                <div class="col-md-4">
+                  <div class="card-box-a card-shadow">
+                    <div class="img-box-a">
+                      <img src="assets/img/Foto Konfirmasi/pondok_berlian_2.jpg" alt="" class="img-a img-fluid" />
+                    </div>
+                    <div class="card-overlay">
+                      <div class="card-overlay-a-content">
+                        <div class="card-header-a">
+                          <h2 class="card-title-a">
+                            <a href="detail_page.html"
+                              >Pondok Berlian 2 <br />
+                              Gowa</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="card-body-a">
+                          <div class="price-box d-flex">
+                            <span class="price-a">Sewa | Rp. 6.500.000/Tahun</span>
+                          </div>
+                          <a href="detail_page.html" class="link-a"
+                            >Lihat Kos
+                            <span class="bi bi-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="card-footer-a">
+                          <ul class="card-info d-flex justify-content-around">
+                            <li>
+                              <h4 class="card-info-title">Luas</h4>
+                              <span
+                                >4x4.5 m
+                                <sup>2</sup>
+                              </span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">Wi-fi</h4>
+                              <span>Ada</span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">AC</h4>
+                              <span>Ada</span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">Tipe Kos</h4>
+                              <span>Putri</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Pondok Berlian 2 -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- End of Kos Putri -->
+
+
+      <!-- ======= Kos Campuran ======= -->
+      <section id="kos_campuran" class="section-property section-t8">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="title-wrap d-flex justify-content-between">
+                      <div class="title-box">
+                        <h2 class="title-a">Kos Campuran</h2>
+                      </div>
+                      <div class="title-link">
+                        <a href="list_kos.html"
+                          >Lihat Semua
+                          <span class="bi bi-chevron-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                          <section class="property-grid grid">
+            <div class="container">
+              <div class="row">
+                <!-- Pondok Berlian 2 -->
+                <div class="col-md-4">
+                  <div class="card-box-a card-shadow">
+                    <div class="img-box-a">
+                      <img src="assets/img/Foto Konfirmasi/pondok_berlian_2.jpg" alt="" class="img-a img-fluid" />
+                    </div>
+                    <div class="card-overlay">
+                      <div class="card-overlay-a-content">
+                        <div class="card-header-a">
+                          <h2 class="card-title-a">
+                            <a href="detail_page.html"
+                              >Pondok Berlian 2 <br />
+                              Gowa</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="card-body-a">
+                          <div class="price-box d-flex">
+                            <span class="price-a">Sewa | Rp. 6.500.000/Tahun</span>
+                          </div>
+                          <a href="detail_page.html" class="link-a"
+                            >Lihat Kos
+                            <span class="bi bi-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="card-footer-a">
+                          <ul class="card-info d-flex justify-content-around">
+                            <li>
+                              <h4 class="card-info-title">Luas</h4>
+                              <span
+                                >4x4.5 m
+                                <sup>2</sup>
+                              </span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">Wi-fi</h4>
+                              <span>Ada</span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">AC</h4>
+                              <span>Ada</span>
+                            </li>
+                            <li>
+                              <h4 class="card-info-title">Tipe Kos</h4>
+                              <span>Putri</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Pondok Berlian 2 -->
+              </section>
+              </div>
+      </section>
+    <!-- End of Kos Campuran -->
+
+    <!-- ======= Footer ======= -->
+    <section class="section-footer" style="background-color: #151100;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <a class="navbar-brand" href="#">
+                  <img src="NgekostAja_footer.png" width="50%" />
+                </a>        
+              </div>
+              <div class="w-body-a">
+                <p class="w-text-a color-text-a text-light">Dapatkan informasi indekos impianmu dengan merasakan pengalaman melihat 
+                  indekos yang berbeda dengan harga yang terjangkau</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand text-light fs-4">Fitur Kami</h3>
+              </div>
+              <div class="w-body-a">
+                <div class="w-body-a">
+                  <ul class="list-unstyled">
+                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a class="text-light" href="#fitur">Virtual Room</a></li>
+                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a class="text-light" href="#fitur">Pembayaran Mudah</a></li>
+                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a class="text-light" href="#fitur">Harga Terjangkau</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand text-light fs-4">Tipe Kos</h3>
+              </div>
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a class="text-light" href="#kos_putra">Kos Putra</a></li>
+                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a class="text-light" href="#kos_putri">Kos Putri</a></li>
+                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a class="text-light" href="#kos_campuran">Kos Campuran</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="background-color: #151100;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="nav-footer">
+              <ul class="list-inline">
+                <p class="text-light">Kunjungi Media Sosial Kami!</p>
+              </ul>
+            </nav>
+            <div class="socials-a">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-facebook text-light" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-twitter text-light" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-instagram text-light" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="bi bi-linkedin text-light" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-footer">
+              <p class="copyright color-text-a text-light">
+                &copy; Copyright
+                <span class="color-a" style="color: #ffcc00;">NgekostAja</span> All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

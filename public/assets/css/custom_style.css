@@ -1,0 +1,71 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: inherit;
+}
+
+.desc-part-card{
+    display: flex;
+    font: sans-serif;
+    justify-content: space-between;
+    font-size: medium;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.rating .num-rate{
+    margin-left: 10px;
+}
+
+.optional {
+    width: 200px;
+}
+
+.inline {
+    display: inline-block;
+    width: auto;
+    padding: auto 30px auto 30px;
+}
+
+@media (max-width: 1200px) {
+    .filter {
+        display: inherit;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .py-5 form {
+        text-align: center;
+    }
+
+    .inline,
+    .optional {
+        width: 300px;
+    }
+
+    .optional {
+        padding: 0.375rem 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .inline,
+    .optional {
+        width: 200px;
+    }
+}
+
+
+.property-summary{
+    width: 100%;
+}
+
+.booking{
+    width: auto;
+    margin:auto  30px auto  30px;
+}
+
